@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+body{
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Background Image*/
+
+.bckg-img{
+    background-size:cover;
+    background-position: top;
+    background-repeat:no-repeat;
+    min-height: 90vh;
+    top: -30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/*A Man Standing*/
+
+
+.body-search-box{
+    background-color:#011d21;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.man-img {
+    max-width: 100%; 
+/* Makes the image fill the container width */
+    height: inherit; /* Automatically adjusts the height to maintain the image's aspect ratio */
+    display: block; 
+    margin:auto;
+    padding:auto;/* Ensures proper spacing and alignment */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-man-box{
+    border: 2px solid green;
+    width: 30%;
+    height: 550px;
+    display: flex;
+    align-items: center;
 }
+.result-box{
+    border: 2px solid black;
+    width: 59%;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
