@@ -1,5 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
     margin: auto;
+}
+
+
+
+/*Navbar Links*/
+.navbar-link {
+  text-decoration: none;
+  color: #FF2625;
+}
+
+.navbar-link:hover,
+.navbar-link.hover {
+  color: #d6cccc !important;
+  border-bottom: 3px ridge rgb(197, 51, 51) !important;
+  box-shadow: #e7ecef !important;
+}
+
+.navbar-link:active,.navbar-link.active {
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 2mm ridge rgba(199, 67, 19, 0.6);
+  box-shadow: #31739f;
+}
+
+
+
+
+/*Login and SignUp Button*/
+.log-sign-btn:hover{
+  border: 1px solid rgb(253, 253, 253) !important;
+  color: #DDEFBB !important;
+}
+
+/*Start BTN*/
+.start-btn:hover{
+  border: 1px solid white !important;
 }
 
 /*Transition effect for Navigation to Home Page*/
@@ -37,15 +77,44 @@ body{
     background-position: top;
     background-repeat:no-repeat;
     min-height: 90vh;
+    border-bottom-left-radius: 10%;
 }
+
+
+/*Txt Description About Virtual Human Body*/
+.statement-container {
+  /* background-color: #f8f8f8; */
+  padding: 150px;
+  border-radius: 8px;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.statement-heading {
+  font-size: 44px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.statement-text {
+  font-size: 28px;
+  color: #555;
+}
+
+
+
+
 
 
 /*A Man Standing*/
 
 
 .body-search-box{
-    background-color:#011d21;
-    
+    background: #31739f;
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    background: linear-gradient(to right, #3A6073, #16222A);  
+    box-shadow: rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -53,22 +122,30 @@ body{
 }
 .man-img {
     max-width: 100%; 
-
     height: inherit;
-    /* display: block;  */
     margin:auto;
     padding:auto;
 }
 
 .search-man-box{
-    /* border: 2px solid green; */
     width: 40%;
     height: 500px;
     display: flex;
     align-items: center;
 }
 .result-box{
-    /* border: 2px solid black; */
+    font-family: 'Rajdhani', sans-serif;
     width: 55%;
+    padding: 50px;
+    font-size: 30px;
+    color: #111416;
+    border: 2px solid none;
+    border-radius: 60px;
+    text-align:center;
+    box-shadow: rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.5) 0px 24px 80px;
+    background: #FFEEEE;
+    background: -webkit-linear-gradient(to top, #DDEFBB, #FFEEEE);
+    background: linear-gradient(to top, #DDEFBB, #FFEEEE);
+  
 
 }

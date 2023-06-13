@@ -33,6 +33,19 @@ const MainBodySearch = () => {
   };
 
   return (
+    <>
+    <div className="statement-container">
+    <h2 className="statement-heading">Unlock Your Fitness Journey</h2>
+    <p className="statement-text">
+      Embark on an interactive experience like no other. Explore our virtual
+      human body and discover exercise details with a simple click. Get
+      comprehensive instructions and expert tips to help you reach your fitness
+      goals. Plus, unlock additional resources for training, nutrition, and
+      lifestyle advice. Let our virtual body be your fitness companion on the
+      path to a healthier, fitter you.
+    </p>
+  </div>
+
     <Stack className="body-search-box" flexDirection="row">
       <Box className="search-man-box" style={{ position: 'relative' }}>
         <img src={man} className="man-img" alt="Man" />
@@ -47,10 +60,11 @@ const MainBodySearch = () => {
           onClick={handleClickArea2}          
         />
       </Box>
-      <Box className="result-box" fontSize="30px" color="HighlightText">
+      <div className="result-box">
         {result}
-      </Box>
+      </div>
     </Stack>
+    </>
   );
 };
 

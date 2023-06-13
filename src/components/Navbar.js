@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import { Stack, Button, Typography } from "@mui/material";
 import backgroundImage from '../assets/backImg2.jpg';
 import Logo from "../assets/Frame 2.svg";
+
 
 
 const Navbar = () => (
@@ -28,17 +29,15 @@ const Navbar = () => (
       direction="row"
       gap="40px"
       fontFamily="'Geologica', cursive"
-      //fontSize="24px"
       alignItems="center"
     >
       <Link
         to="/"
         style={{
           textDecoration: "none",
-          color: "#FF2625",
-          borderBottom: "3px solid red",
-          
+          color: "#FF2625",          
         }}
+        className={`navbar-link ${location.pathname === '/' ? 'active' : ''}`}
       >
         HOME
       </Link>
@@ -48,19 +47,20 @@ const Navbar = () => (
           textDecoration: "none",
           color: "#FF2625",          
         }}
+        className={`navbar-link ${location.pathname === '/search-exercise' ? 'active' : ''}`}
       >
         SEARCH EXERCISE
       </Link>
-      <Link to="/" style={{ textDecoration: "none", color: "#FF2625" }}>
+      <Link to="/" style={{ textDecoration: "none", color: "#FF2625" }} className="navbar-link">
         ABOUT
       </Link>
-      <Link to="/" style={{ textDecoration: "none", color: "#FF2625" }}>
+      <Link to="/" style={{ textDecoration: "none", color: "#FF2625" }} className="navbar-link">
         CONTACT
       </Link>
     </Stack>
 
-    <Stack direction="row" gap="30px" height="40px">
-      <Button
+    <Stack direction="row" gap="30px" height="40px" >
+      <Button  className="log-sign-btn"
         sx={{
           bgcolor: "#FF2625",
           color: "#fff",
@@ -71,7 +71,7 @@ const Navbar = () => (
       >
         LOG IN
       </Button>
-      <Button
+      <Button  className="log-sign-btn"
         sx={{
           bgcolor: "#73447A",
           color: "#fff",
@@ -156,7 +156,7 @@ const Navbar = () => (
       textFillColor: "transparent"}}> Fire</span>
   </Typography>
   <Link to="/">
-  <Button sx={{
+  <Button className="start-btn" sx={{
           //ml:"20px",
           mt:"20px",
           fontSize:"18px",
