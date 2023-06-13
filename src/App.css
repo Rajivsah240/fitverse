@@ -2,6 +2,34 @@ body{
     margin: auto;
 }
 
+/*Transition effect for Navigation to Home Page*/
+.fade-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 500ms ease, transform 1000ms ease;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 500ms ease, transform 1000ms ease;
+  }
+
+
+
+
+
+
 /*Background Image*/
 
 .bckg-img{
@@ -9,7 +37,6 @@ body{
     background-position: top;
     background-repeat:no-repeat;
     min-height: 90vh;
-    top: -30px;
 }
 
 
@@ -18,6 +45,7 @@ body{
 
 .body-search-box{
     background-color:#011d21;
+    
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -25,22 +53,22 @@ body{
 }
 .man-img {
     max-width: 100%; 
-/* Makes the image fill the container width */
-    height: inherit; /* Automatically adjusts the height to maintain the image's aspect ratio */
-    display: block; 
+
+    height: inherit;
+    /* display: block;  */
     margin:auto;
-    padding:auto;/* Ensures proper spacing and alignment */
+    padding:auto;
 }
 
 .search-man-box{
-    border: 2px solid green;
-    width: 30%;
-    height: 550px;
+    /* border: 2px solid green; */
+    width: 40%;
+    height: 500px;
     display: flex;
     align-items: center;
 }
 .result-box{
-    border: 2px solid black;
-    width: 59%;
+    /* border: 2px solid black; */
+    width: 55%;
 
 }

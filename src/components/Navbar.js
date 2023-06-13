@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Stack, Button, Typography } from "@mui/material";
 import backgroundImage from '../assets/backImg2.jpg';
 import Logo from "../assets/Frame 2.svg";
-import { ClassNames } from "@emotion/react";
+
 
 const Navbar = () => (
   <div className="bckg-img" style={{backgroundImage: `url(${backgroundImage})`,
@@ -41,6 +41,15 @@ const Navbar = () => (
         }}
       >
         HOME
+      </Link>
+      <Link
+        to="/search-exercise"
+        style={{
+          textDecoration: "none",
+          color: "#FF2625",          
+        }}
+      >
+        SEARCH EXERCISE
       </Link>
       <Link to="/" style={{ textDecoration: "none", color: "#FF2625" }}>
         ABOUT
@@ -146,6 +155,7 @@ const Navbar = () => (
       backgroundClip: "text",
       textFillColor: "transparent"}}> Fire</span>
   </Typography>
+  <Link to="/">
   <Button sx={{
           //ml:"20px",
           mt:"20px",
@@ -155,7 +165,8 @@ const Navbar = () => (
           textTransform: "none",
           width: "210px",
           borderRadius: "20px"
-        }}>Let's Get Started</Button>
+        }}
+        >Let's Get Started</Button></Link>
   </Stack>
 </div>
 );
