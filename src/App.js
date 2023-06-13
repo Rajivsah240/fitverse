@@ -12,7 +12,7 @@ function App() {
     <Box> 
       <Navbar/>
       <Routes>
-        <Route path="/" element={<HomeWithTransition/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/search-exercise" element={<SearchExercises/>}/>
       </Routes>
     </Box>
@@ -20,19 +20,19 @@ function App() {
 }
 
 
-const HomeWithTransition = () => {
-  const location = useLocation();
+// const HomeWithTransition = () => {
+//   const location = useLocation();
 
-  return (
-    <TransitionGroup>
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
-        <Box className="page">
-          <Routes><Route path="/" element={<Home/>} /></Routes>
-        </Box>
-      </CSSTransition>
-    </TransitionGroup>
-  );
-};
+//   return (
+//     <TransitionGroup>
+//       <CSSTransition key={location.key} classNames="fade" timeout={300}>
+//         <Box className="page">
+//           <Routes><Route path="/" element={<Home/>} /></Routes>
+//         </Box>
+//       </CSSTransition>
+//     </TransitionGroup>
+//   );
+// };
 
 export default App;
 

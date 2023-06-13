@@ -8,7 +8,21 @@ body{
 
 
 
-/*Navbar Links*/
+/*Navbar and navbar Links*/
+.navbar{
+  /* background: rgb(45,42,37);
+  background: linear-gradient(90deg, rgba(45,42,37,0.9080882352941176) 0%, rgba(43,2,2,1) 100%); */
+  /* background: rgb(9,9,8);
+  background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
+  /* background: rgb(9,9,8); */
+  /* background: linear-gradient(180deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
+  background: rgb(9,9,8);
+  background: linear-gradient(180deg, rgba(9,9,8,0.9080882352941176) 46%, rgba(75,9,9,1) 100%);
+}
+.navbar:hover,.navbar.hover{
+  visibility: visible !important;
+}
+
 .navbar-link {
   text-decoration: none;
   color: #FF2625;
@@ -76,8 +90,14 @@ body{
     background-size:cover;
     background-position: top;
     background-repeat:no-repeat;
-    min-height: 90vh;
-    border-bottom-left-radius: 10%;
+    min-height: 80vh;
+    border-bottom-left-radius: 15%;
+    
+}
+.background-box{
+  margin:auto;
+  text-align: center;
+  
 }
 
 
@@ -85,6 +105,7 @@ body{
 .statement-container {
   /* background-color: #f8f8f8; */
   padding: 150px;
+  padding-top: 90px;
   border-radius: 8px;
   /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   text-align: center;

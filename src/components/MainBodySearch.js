@@ -34,7 +34,7 @@ const MainBodySearch = () => {
 
   return (
     <>
-    <div className="statement-container">
+    <div className="statement-container" id='body'>
     <h2 className="statement-heading">Unlock Your Fitness Journey</h2>
     <p className="statement-text">
       Embark on an interactive experience like no other. Explore our virtual
