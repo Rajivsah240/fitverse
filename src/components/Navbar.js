@@ -67,7 +67,7 @@ const Navbar = () => {
           to="/about"
           style={{
             textDecoration: "none",
-            color: "#FF2625",
+            color: "#ffff",
           }}
           className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}>
           ABOUT
@@ -76,7 +76,7 @@ const Navbar = () => {
           to="/contact"
           style={{
             textDecoration: "none",
-            color: "#FF2625",
+            color: "#ffff",
           }}
           className={`navbar-link ${location.pathname === '/contact' ? 'active' : ''}`}>
           CONTACT
