@@ -41,10 +41,6 @@ body{
   border-bottom: 2mm ridge rgba(81,84,115,1);
   box-shadow: #31739f;
 }
-/* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgba(81,84,115,1) 87.1% ); */
-
-
-
 
 /*Login and SignUp Button*/
 .log-sign-btn:hover{
