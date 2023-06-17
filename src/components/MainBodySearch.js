@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import man from '../assets/man.png';
+import backgroundImage from '../assets/gym_img7.jpg';
 
 const ClickableArea = ({ top, left, onClick, active }) => {
   return (
@@ -14,7 +15,11 @@ const ClickableArea = ({ top, left, onClick, active }) => {
         width: '10px',
         height: '10px',
         borderRadius: '50%',
+<<<<<<< HEAD
         backgroundColor: "rgba(255, 0, 0, 0.5)",
+=======
+        backgroundColor:"rgba(255, 255, 255, 0.5)",
+>>>>>>> 74191148cdfd32e6f1858bb61f30aca4e5e60373
         cursor: 'pointer',
       }}
       onClick={onClick}
@@ -38,7 +43,19 @@ const MainBodySearch = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <div className="statement-container" id='body'>
+=======
+      <div
+        className="statement-container"
+        id='body'
+        style={{
+          background: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+>>>>>>> 74191148cdfd32e6f1858bb61f30aca4e5e60373
         <h2 className="statement-heading">Unlock Your Fitness Journey</h2>
         <p className="statement-text">
           Embark on an interactive experience like no other. Explore our virtual
@@ -56,6 +73,7 @@ const MainBodySearch = () => {
           <ClickableArea
             top="40%"
             left="60%"
+<<<<<<< HEAD
             onClick={handleClickArea1}
             active={activeButton === 1}
           />
@@ -67,6 +85,17 @@ const MainBodySearch = () => {
           />
         </Box>
         <div className={`result-box ${activeButton ? 'active' : ''}`}>
+=======
+            onClick={handleClickArea1}          
+          />
+          <ClickableArea
+            top="40%"
+            left="45%"
+            onClick={handleClickArea2}          
+          />
+        </Box>
+        <div className="result-box">
+>>>>>>> 74191148cdfd32e6f1858bb61f30aca4e5e60373
           {result}
         </div>
       </Stack>
