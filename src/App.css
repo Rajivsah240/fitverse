@@ -17,7 +17,7 @@ body{
   /* background: rgb(9,9,8); */
   /* background: linear-gradient(180deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
   background: rgb(9,9,8);
-  background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 46%, rgba(75,9,9,1) 100%);
+  /* background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 46%, rgba(75,9,9,1) 100%); */
 }
 .navbar:hover,.navbar.hover{
   visibility: visible !important;
