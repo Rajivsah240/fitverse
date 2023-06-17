@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='about-container-main'>
+    <div className='about-container-main' style={{ backgroundColor: 'black', color: 'black' }}>
     <div className="about-container">
       <h1>About Fitverse</h1>
       <p>

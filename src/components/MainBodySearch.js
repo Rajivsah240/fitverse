@@ -39,7 +39,10 @@ const MainBodySearch = () => {
 
   return (
     <>
-      <div className="statement-container" id='body'>
+
+    <div className="GymModel">
+
+    <div className="statement-container" id='body' >
         <h2 className="statement-heading">Unlock Your Fitness Journey</h2>
         <p className="statement-text">
           Embark on an interactive experience like no other. Explore our virtual
@@ -50,6 +53,8 @@ const MainBodySearch = () => {
           path to a healthier, fitter you.
         </p>
       </div>
+
+      <div className="line"></div>
 
       <Stack className="body-search-box" flexDirection="row">
         <Box className="search-man-box" style={{ position: 'relative' }}>
@@ -71,6 +76,9 @@ const MainBodySearch = () => {
           {result}
         </div>
       </Stack>
+
+
+      </div>
     </>
   );
 };

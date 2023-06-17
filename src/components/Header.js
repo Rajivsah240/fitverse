@@ -102,7 +102,7 @@ const Header = () => {
               //ml:"20px",
               mt: "20px",
               fontSize: "18px",
-              bgcolor: "#FF2625",
+              bgcolor: "rgba(81,84,115,1)",
               color: "#fff",
               textTransform: "none",
               width: "210px",
