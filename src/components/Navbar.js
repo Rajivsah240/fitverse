@@ -28,7 +28,6 @@ const Navbar = () => {
         opacity: isNavbarVisible ? 1 : 0,
         height: isNavbarVisible ? "94px":"5px",
         transition: "opacity 0.1s ease-in-out",
-        background: "#000", // Set the background color to black
       }}
     >
       <Link to="/">
@@ -65,10 +64,22 @@ const Navbar = () => {
         >
           SEARCH EXERCISE
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "#ffff" }} className="navbar-link">
+        <Link
+          to="/about"
+          style={{
+            textDecoration: "none",
+            color: "#FF2625",
+          }}
+          className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}>
           ABOUT
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "#ffff" }} className="navbar-link">
+        <Link
+          to="/contact"
+          style={{
+            textDecoration: "none",
+            color: "#FF2625",
+          }}
+          className={`navbar-link ${location.pathname === '/contact' ? 'active' : ''}`}>
           CONTACT
         </Link>
       </Stack>
