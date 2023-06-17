@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Stack, Button, Typography } from "@mui/material";
-import backgroundImage from '../assets/backImg2.jpg';
-import Logo from "../assets/fit4.png";
+import Logo from "../assets/111.svg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -31,11 +30,11 @@ const Navbar = () => {
         background: "#000", // Set the background color to black
       }}
     >
-      <Link to="/">
+      <Link to="/" >
         <img
           src={Logo}
           alt="logo"
-          style={{ width: "150px", height: "50px", margin: "0px", marginTop: "10px" }}
+          style={{ width: "150px", height: "50px", margin: "0px" }}
         />
       </Link>
 

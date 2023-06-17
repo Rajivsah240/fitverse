@@ -15,6 +15,7 @@ const Header = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        overflow: "hidden", // Hide the content outside the stack
       }}
     >
       <div className="background-box">
