@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "../assets/LOGO 3.svg";
+import Logo from "../assets/111.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer-distributed">
+    <footer className="footer-distributed" style={{ backgroundColor: "black" }}>
       <div className="footer-left">
         <img
           src={Logo}

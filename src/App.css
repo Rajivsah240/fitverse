@@ -25,35 +25,32 @@ body{
 
 .navbar-link {
   text-decoration: none;
-  color: #FF2625;
+  color: rgba(81,84,115,1);
 }
 
 .navbar-link:hover,
 .navbar-link.hover {
   color: #d6cccc !important;
-  border-bottom: 3px ridge rgb(197, 51, 51) !important;
+  border-bottom: 3px ridge rgba(81,84,115,1) !important;
   box-shadow: #e7ecef !important;
 }
 
 .navbar-link:active,.navbar-link.active {
   color: #000000;
   font-weight: bold;
-  border-bottom: 2mm ridge rgba(199, 67, 19, 0.6);
+  border-bottom: 2mm ridge rgba(81,84,115,1);
   box-shadow: #31739f;
 }
 
-
-
-
 /*Login and SignUp Button*/
 .log-sign-btn:hover{
-  border: 1px solid rgb(253, 253, 253) !important;
-  color: #DDEFBB !important;
+  border: 1px solid rgba(81,84,115,1)!important;
+  /* color: #DDEFBB !important; */
 }
 
 /*Start BTN*/
 .start-btn:hover{
-  border: 1px solid white !important;
+  border: 1px solid rgba(81,84,115,1) !important;
 }
 
 /*Transition effect for Navigation to Home Page*/
@@ -91,7 +88,7 @@ body{
     background-position: top;
     background-repeat:no-repeat;
     min-height: 80vh;
-    border-bottom-left-radius: 15%;
+    border-bottom-left-radius: 0%;
     
 }
 .background-box{
@@ -102,25 +99,42 @@ body{
 
 
 /*Txt Description About Virtual Human Body*/
+
+.GymModel {
+  background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% );
+
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(45 46 48);
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
 .statement-container {
-  /* background-color: #f8f8f8; */
+  /* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% ); */
+  color: #000000;
   padding: 150px;
   padding-top: 90px;
   border-radius: 8px;
   /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   text-align: center;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
 }
 
 .statement-heading {
   font-size: 44px;
   font-weight: 700;
-  color: #333;
+  color: black;
   margin-bottom: 10px;
 }
 
 .statement-text {
   font-size: 28px;
-  color: #555;
+  color: black;
 }
 
 
@@ -132,10 +146,8 @@ body{
 
 
 .body-search-box{
-    background: #31739f;
-    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
-    background: linear-gradient(to right, #3A6073, #16222A);  
-    box-shadow: rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    /* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% ); */
+    /* box-shadow: rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -159,15 +171,15 @@ body{
     width: 55%;
     padding: 50px;
     font-size: 30px;
-    color: #111416;
+    color: #333;
     /* display: flex;
     align-items: center; */
-    border-radius: 60px;
+    border-radius: 0px;
     text-align:center;
     box-shadow: rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.5) 0px 24px 80px;
-    background: #FFEEEE;
-    background: -webkit-linear-gradient(to top, #DDEFBB, #FFEEEE);
-    background: linear-gradient(to top, #DDEFBB, #FFEEEE);
+    /* background: linear-gradient(to right, black, #222222);   */
+    /* /* background: -webkit-linear-gradient(to top, #FFEEEE, #FFEEEE); */
+    background: linear-gradient(to top, #FFEEEE, #FFEEEE);
     white-space: pre-line;
 }
 
@@ -176,7 +188,10 @@ body{
 }
 
 
-
+.SearchExerciseBox{
+  background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgba(81,84,115,1) 87.1% );
+  margin-top: 0px !important;
+}
 
 
 
@@ -390,8 +405,8 @@ body{
 
 .about-container-main{
   background: rgb(9,9,8);
-  background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 15%, rgba(75,9,9,1) 140%);
-  color: #fff;
+  background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgba(81,84,115,1) 87.1% );
+  color: black;
 }
 .about-container {
   max-width: 800px;
