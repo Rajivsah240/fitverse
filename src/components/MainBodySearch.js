@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import man from '../assets/man.png';
-import backgroundImage from '../assets/gym_img7.jpg';
 
 const ClickableArea = ({ top, left, onClick, active }) => {
   return (
@@ -42,7 +41,7 @@ const MainBodySearch = () => {
 
     <div className="GymModel">
 
-    <div className="statement-container" id='body' >
+    {/* <div className="statement-container" id='body' >
         <h2 className="statement-heading">Unlock Your Fitness Journey</h2>
         <p className="statement-text">
           Embark on an interactive experience like no other. Explore our virtual
@@ -52,11 +51,11 @@ const MainBodySearch = () => {
           lifestyle advice. Let our virtual body be your fitness companion on the
           path to a healthier, fitter you.
         </p>
-      </div>
+      </div> */}
 
-      <div className="line"></div>
+      <div className="line" id='body'></div>
 
-      <Stack className="body-search-box" flexDirection="row">
+      <Stack className="body-search-box" flexDirection="row" >
         <Box className="search-man-box" style={{ position: 'relative' }}>
           <img src={man} className="man-img" alt="Man" />
           <ClickableArea

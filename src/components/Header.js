@@ -1,24 +1,52 @@
-import React from "react";
+import React, {useRef} from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import { Stack, Button, Typography } from "@mui/material";
 import backgroundImage from '../assets/gym_img2.jpg';
+import { Model } from './Anatomy.jsx'; // Import the Model component
+import { Canvas } from '@react-three/fiber';
 
 const Header = () => {
+  const modelContainerRef = useRef(null);
   return (
     <Stack
       className="bckg-img"
       style={{
+        position: "relative", // Set the position to relative
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh", // Set the height to full viewport height
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        overflow: "hidden", // Hide the content outside the stack
+        overflow: "hidden",
       }}
     >
-      <div className="background-box">
+      {/* Add the 3D model */}
+      <div
+        style={{
+          position: "absolute",
+          top: "35%",
+          left: "20%",
+          transform: "translate(-50%, -50%)",
+          width: "50%",
+          height: "60%",
+          zIndex: 1, // Set a higher z-index to place it above the background image
+        }}
+      >
+        <Canvas>
+        <ambientLight intensity={0.1} /> {/* Adjust the intensity of the ambient light */}
+        <pointLight position={[5, 10, 5]} intensity={0.95} /> {/* Adjust the position and intensity of the point light */}
+          <Model
+                position={[0, 1, 0]}
+                scale={[30, 30, 30]}
+                rotation={[0, 1, 0]}
+                ref={modelContainerRef}
+              />
+        </Canvas>
+      </div>
+
+      <div className="background-box" style={{zIndex: 2}}>
         <Typography
           variant="h4"
           sx={{

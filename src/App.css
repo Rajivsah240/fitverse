@@ -111,12 +111,13 @@ body{
     background-color: rgb(45 46 48);
     margin-top: 0px;
     margin-bottom: 100px;
+    padding: 0px;
 }
 
 .statement-container {
   /* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% ); */
   color: #000000;
-  padding: 150px;
+  padding: 0px;
   padding-top: 90px;
   border-radius: 8px;
   /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
@@ -148,7 +149,7 @@ body{
 .body-search-box{
     /* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% ); */
     /* box-shadow: rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
-    padding: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -161,6 +162,7 @@ body{
 }
 
 .search-man-box{
+  padding: 0px;
     width: 40%;
     height: 500px;
     display: flex;
@@ -170,6 +172,7 @@ body{
     font-family: 'Rajdhani', sans-serif;
     width: 55%;
     padding: 50px;
+    padding-bottom: 50px;
     font-size: 30px;
     color: #333;
     /* display: flex;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Stack, Button, Typography } from "@mui/material";
+import { Stack, Button } from "@mui/material";
 import Logo from "../assets/111.svg";
 
 const Navbar = () => {
@@ -87,7 +87,7 @@ const Navbar = () => {
         <Button className="log-sign-btn"
           sx={{
             color: "white",
-            bgcolor: "rgba(81,84,115,1)",
+            bgcolor: "rgb(131, 137, 194)",
             textTransform: "none",
             width: "80px",
             borderRadius: "20px"
@@ -98,7 +98,7 @@ const Navbar = () => {
         <Button className="log-sign-btn"
           sx={{
             color: "white",
-            bgcolor: "rgba(81,84,115,1)",
+            bgcolor: "rgb(131, 137, 194)",
             textTransform: "none",
             width: "80px",
             borderRadius: "20px"
