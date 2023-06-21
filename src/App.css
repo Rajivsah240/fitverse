@@ -103,7 +103,6 @@ body{
 
 .GymModel {
   background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% );
-
 }
 
 .line{
@@ -115,13 +114,12 @@ body{
     padding: 0px;
 }
 
-.statement-container {
-  /* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% ); */
+/* .statement-container {
   color: #000000;
   padding: 0px;
   padding-top: 90px;
   border-radius: 8px;
-  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
   text-align: center;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0%;
@@ -137,7 +135,7 @@ body{
 .statement-text {
   font-size: 28px;
   color: black;
-}
+} */
 
 
 
@@ -156,7 +154,7 @@ body{
     justify-content: space-around;
 }
 .man-img {
-    max-width: 100%; 
+    max-width: 110%; 
     height: inherit;
     margin:auto;
     padding:auto;
