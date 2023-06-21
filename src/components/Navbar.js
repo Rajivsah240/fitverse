@@ -86,8 +86,8 @@ const Navbar = () => {
       <Stack direction="row" gap="30px" height="40px">
         <Button className="log-sign-btn"
           sx={{
-            color: "white",
-            bgcolor: "rgb(131, 137, 194)",
+            color: "black",
+            bgcolor: "white",
             textTransform: "none",
             width: "80px",
             borderRadius: "20px"
@@ -97,8 +97,8 @@ const Navbar = () => {
         </Button>
         <Button className="log-sign-btn"
           sx={{
-            color: "white",
-            bgcolor: "rgb(131, 137, 194)",
+            color: "black",
+            bgcolor: "white",
             textTransform: "none",
             width: "80px",
             borderRadius: "20px"

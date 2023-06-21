@@ -1,8 +1,9 @@
 import React, {useRef} from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import { Stack, Button, Typography } from "@mui/material";
-import backgroundImage from '../assets/gym_img2.jpg';
-import { Model } from './Anatomy.jsx'; // Import the Model component
+import backgroundImage from '../assets/view.jpg';
+import { Model1 } from './Anatomy.jsx'; // Import the Model component
+
 import { Canvas } from '@react-three/fiber';
 
 const Header = () => {
@@ -26,20 +27,20 @@ const Header = () => {
       <div
         style={{
           position: "absolute",
-          top: "35%",
-          left: "20%",
-          transform: "translate(-50%, -50%)",
+          top: "45%",
+          left: "18%",
+          transform: "translate(-50%, -70%)",
           width: "50%",
-          height: "60%",
+          height: "100%",
           zIndex: 1, // Set a higher z-index to place it above the background image
         }}
       >
         <Canvas>
-        <ambientLight intensity={0.1} /> {/* Adjust the intensity of the ambient light */}
-        <pointLight position={[5, 10, 5]} intensity={0.95} /> {/* Adjust the position and intensity of the point light */}
-          <Model
-                position={[0, 1, 0]}
-                scale={[30, 30, 30]}
+        <ambientLight intensity={0.04} /> {/* Adjust the intensity of the ambient light */}
+        <pointLight position={[25, 100, 5]} intensity={0.99} /> {/* Adjust the position and intensity of the point light */}
+          <Model1
+                position={[0, 0, 0]}
+                scale={[28, 30, 30]}
                 rotation={[0, 1, 0]}
                 ref={modelContainerRef}
               />
@@ -50,7 +51,7 @@ const Header = () => {
         <Typography
           variant="h4"
           sx={{
-            //ml: "20px",
+            ml: "70px",
             mt: "20px",
             width: "512px",
             height: "86px",
@@ -72,9 +73,9 @@ const Header = () => {
             //background:"linear-gradient(90deg, rgba(235,143,35,1) 41%, rgba(255,255,255,1) 100%)"
           }}
         >
-          Ignite
+          Reach
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h4"
           sx={{
             //ml: "20px",
@@ -90,8 +91,8 @@ const Header = () => {
             color: "#FFFFFF",
           }}
         >
-          Your
-        </Typography>
+          { With }
+        </Typography> */}
         <Typography
           variant="h4"
           sx={{
@@ -108,7 +109,7 @@ const Header = () => {
             color: "#EB8F23",
           }}
         >
-          <span style={{ color: "#FFFFFF", paddingRight: "10px" }}>Inner</span>
+          <span style={{ color: "#FFFFFF", paddingRight: "10px" }}>Stellar</span>
           <span
             style={{
               background:
@@ -120,7 +121,7 @@ const Header = () => {
             }}
           >
             {" "}
-            Fire
+            Fitness
           </span>
         </Typography>
         <ScrollLink to="body" smooth={true} duration={500}>
@@ -130,14 +131,14 @@ const Header = () => {
               //ml:"20px",
               mt: "20px",
               fontSize: "18px",
-              bgcolor: "rgb(131, 137, 194)",
-              color: "#fff",
+              bgcolor: "white",
+              color: "#000",
               textTransform: "none",
               width: "210px",
               borderRadius: "20px",
             }}
           >
-            Let's Get Started
+            Let's Take off
           </Button>
         </ScrollLink>
       </div>

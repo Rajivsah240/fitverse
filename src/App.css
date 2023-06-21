@@ -31,26 +31,27 @@ body{
 .navbar-link:hover,
 .navbar-link.hover {
   color: #d6cccc !important;
-  border-bottom: 3px ridge rgba(81,84,115,1) !important;
+  border-bottom: 3px ridge rgb(27, 102, 215) !important;
   box-shadow: #e7ecef !important;
 }
 
 .navbar-link:active,.navbar-link.active {
-  color: #000000;
+  color: white;
   font-weight: bold;
-  border-bottom: 2mm ridge rgba(81,84,115,1);
+  border-bottom: 2mm ridge rgb(27, 102, 215);
   box-shadow: #31739f;
 }
 
 /*Login and SignUp Button*/
 .log-sign-btn:hover{
-  border: 1px solid rgba(81,84,115,1)!important;
-  /* color: #DDEFBB !important; */
+  border: 1px solid rgb(27, 102, 215)!important;
+   color: #ffff !important; 
 }
 
 /*Start BTN*/
 .start-btn:hover{
-  border: 1px solid rgba(81,84,115,1) !important;
+  border: 1px solid rgb(27, 102, 215) !important;
+  color: white;
 }
 
 /*Transition effect for Navigation to Home Page*/
