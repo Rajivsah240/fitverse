@@ -3,6 +3,13 @@ import { Stack, Box, Typography } from "@mui/material";
 import manFront from "../assets/Man_Front.png";
 import manBack from "../assets/Man_Back.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDumbbell,
+  faPersonWalking,
+  faWeightHanging,
+} from "@fortawesome/free-solid-svg-icons";
+
 const ClickableArea = ({ top, left, onClick, active }) => {
   return (
     <div
@@ -32,7 +39,7 @@ const MainBodySearch = () => {
   const [activeButton, setActiveButton] = useState(null);
 
   const containerStyle = {
-    backgroundColor:'#FFFFFF',
+    backgroundColor: "#FFFFFF",
     // padding: "10px",
   };
 
@@ -49,7 +56,9 @@ const MainBodySearch = () => {
   const handleClickArea1 = () => {
     setFrontResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3">Shoulders (Deltoids)</Typography >
+        <Typography align="center" variant="h3">
+          Shoulders (Deltoids)
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -178,7 +187,10 @@ const MainBodySearch = () => {
   const handleClickArea2 = () => {
     setFrontResult(
       <div style={containerStyle}>
-        <Typography  align="center" variant="h3"> Chest (Pectoralis Major and Minor)</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Chest (Pectoralis Major and Minor)
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>Exercise 1: Barbell Bench Press</p>
@@ -309,7 +321,10 @@ const MainBodySearch = () => {
   const handleClickArea3 = () => {
     setFrontResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" > Abdominals</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Abdominals
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>Exercise 1: Plank</p>
@@ -436,7 +451,10 @@ const MainBodySearch = () => {
   const handleClickArea4 = () => {
     setFrontResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" > Quads</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Quads
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>Exercise 1: Barbell Squats</p>
@@ -559,7 +577,10 @@ const MainBodySearch = () => {
   const handleClickArea5 = () => {
     setFrontResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" > Forearms</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Forearms
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -693,7 +714,10 @@ const MainBodySearch = () => {
   const handleClickArea6 = () => {
     setFrontResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" > Biceps</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Biceps
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -831,7 +855,9 @@ const MainBodySearch = () => {
   const handleClickArea7 = () => {
     setBackResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" >Triceps</Typography >
+        <Typography align="center" variant="h3">
+          Triceps
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -966,7 +992,9 @@ const MainBodySearch = () => {
   const handleClickArea8 = () => {
     setBackResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" >Back (Latissimus Dorsi, Rhomboids, Trapezius)</Typography >
+        <Typography align="center" variant="h3">
+          Back (Latissimus Dorsi, Rhomboids, Trapezius)
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -1101,7 +1129,10 @@ const MainBodySearch = () => {
   const handleClickArea9 = () => {
     setBackResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" > Calves</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Calves
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -1238,7 +1269,10 @@ const MainBodySearch = () => {
   const handleClickArea10 = () => {
     setBackResult(
       <div style={containerStyle}>
-        <Typography align="center" variant="h3" > Hamstrings</Typography >
+        <Typography align="center" variant="h3">
+          {" "}
+          Hamstrings
+        </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
@@ -1367,7 +1401,7 @@ const MainBodySearch = () => {
 
   return (
     <div className="GymModel">
-      <div className="statement-container" id="body">
+      <Stack className="statement-container" id="body">
         {/* <Typography  className="statement-heading">Unlock Your Fitness Journey</Typography > */}
         <p className="statement-text">
           {/* Embark on an interactive experience like no other. Explore our virtual
@@ -1380,7 +1414,32 @@ const MainBodySearch = () => {
           website. By clicking on the labeled body parts, you can discover
           interesting facts and uncover the amazing wonders that lie within.
         </p>
-      </div>
+        <Stack
+          flexDirection={"row"}
+          alignItems={"center"}
+          justifyContent={"space-around"}
+          padding={"10px"}
+        >
+          <FontAwesomeIcon
+            icon={faWeightHanging}
+            beat
+            size="2xl"
+            style={{ color: "#6c80a3" }}
+          />
+          <FontAwesomeIcon
+            icon={faDumbbell}
+            beat
+            size="2xl"
+            style={{ color: "#275c7c" }}
+          />
+          <FontAwesomeIcon
+            icon={faPersonWalking}
+            beatFade
+            size="2xl"
+            style={{ color: "#2b3850" }}
+          />
+        </Stack>
+      </Stack>
 
       {/* <div className="line" id='body'></div> */}
       <Stack flexDirection={"column"}>

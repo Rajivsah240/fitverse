@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Stack, Button, Typography } from "@mui/material";
 import backgroundImage from '../assets/view.jpg';
 import { Model1 } from './Anatomy.jsx'; // Import the Model component
-
+import RocketLaunchSharpIcon from '@mui/icons-material/RocketLaunchSharp';
 import { Canvas } from '@react-three/fiber';
 
 const Header = () => {
@@ -126,6 +126,7 @@ const Header = () => {
         </Typography>
         <ScrollLink to="body" smooth={true} duration={500}>
           <Button
+            startIcon={<RocketLaunchSharpIcon/>}
             className="start-btn"
             sx={{
               //ml:"20px",
