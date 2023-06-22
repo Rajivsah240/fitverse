@@ -16,7 +16,7 @@ body{
   background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
   /* background: rgb(9,9,8); */
   /* background: linear-gradient(180deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
-  background: rgb(9,9,8);
+  background: rgb(0, 0, 0);
   /* background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 46%, rgba(75,9,9,1) 100%); */
 }
 .navbar:hover,.navbar.hover{
@@ -114,28 +114,30 @@ body{
     padding: 0px;
 }
 
-/* .statement-container {
+.statement-container {
   color: #000000;
-  padding: 0px;
-  padding-top: 90px;
+  background-color: #c4c4c4;
+  padding: 90px 160px;
+  
   border-radius: 8px;
-   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
   text-align: center;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0%;
 }
 
-.statement-heading {
+/* .statement-heading {
   font-size: 44px;
   font-weight: 700;
   color: black;
   margin-bottom: 10px;
-}
+} */
 
 .statement-text {
-  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
   color: black;
-} */
+}
 
 
 
@@ -148,11 +150,17 @@ body{
 .body-search-box{
     /* background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% ); */
     /* box-shadow: rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
-    padding-right: 20px;
+    /* padding-right: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 30px;
 }
+.image-container{
+  height: inherit;
+}
+
+
 .man-img {
     max-width: 110%; 
     height: inherit;
@@ -161,8 +169,8 @@ body{
 }
 
 .search-man-box{
-  padding: 0px;
-    width: 40%;
+    padding: 0px;
+    width: 250px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -170,14 +178,13 @@ body{
 .result-box{
     font-family: 'Rajdhani', sans-serif;
     width: 55%;
-    padding: 50px;
-    padding-bottom: 50px;
+    padding: 20px;
     font-size: 30px;
     color: #333;
     /* display: flex;
     align-items: center; */
     border-radius: 0px;
-    text-align:center;
+    text-align:left;
     box-shadow: rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.5) 0px 24px 80px;
     /* background: linear-gradient(to right, black, #222222);   */
     /* /* background: -webkit-linear-gradient(to top, #FFEEEE, #FFEEEE); */
@@ -188,6 +195,19 @@ body{
 .result-box.active{
   font-size: 20px;
 }
+
+.exercises-details-container{
+  padding-right: 100px;
+}
+
+
+
+
+
+
+
+
+
 
 
 .SearchExerciseBox{
