@@ -34,7 +34,7 @@ const MainBodySearch = () => {
   const [frontresult, setFrontResult] = useState(
     "CLICK ANY BODY PART TO START"
   );
-  const [backresult, setBackResult] = useState("CLICK ANY BODY PART TO START");
+  // const [backresult, setFrontResult] = useState("CLICK ANY BODY PART TO START");
 
   const [activeButton, setActiveButton] = useState(null);
 
@@ -853,7 +853,7 @@ const MainBodySearch = () => {
   };
 
   const handleClickArea7 = () => {
-    setBackResult(
+    setFrontResult(
       <div style={containerStyle}>
         <Typography align="center" variant="h3">
           Triceps
@@ -990,7 +990,7 @@ const MainBodySearch = () => {
   };
 
   const handleClickArea8 = () => {
-    setBackResult(
+    setFrontResult(
       <div style={containerStyle}>
         <Typography align="center" variant="h3">
           Back (Latissimus Dorsi, Rhomboids, Trapezius)
@@ -1127,7 +1127,7 @@ const MainBodySearch = () => {
   };
 
   const handleClickArea9 = () => {
-    setBackResult(
+    setFrontResult(
       <div style={containerStyle}>
         <Typography align="center" variant="h3">
           {" "}
@@ -1267,7 +1267,7 @@ const MainBodySearch = () => {
   };
 
   const handleClickArea10 = () => {
-    setBackResult(
+    setFrontResult(
       <div style={containerStyle}>
         <Typography align="center" variant="h3">
           {" "}
@@ -1442,7 +1442,7 @@ const MainBodySearch = () => {
       </Stack>
 
       {/* <div className="line" id='body'></div> */}
-      <Stack flexDirection={"column"}>
+      <Stack flexDirection={"column"} sx={{background:'linear-gradient(to top, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965)'}}>
         <Stack className="body-search-box" flexDirection="row">
           <Box className="search-man-box" style={{ position: "relative" }}>
             <div className="image-container">
@@ -1488,8 +1488,8 @@ const MainBodySearch = () => {
           <div className={`result-box ${activeButton ? "active" : ""}`}>
             {frontresult}
           </div>
-        </Stack>
-        <Stack className="body-search-box" flexDirection="row">
+        {/* </Stack> */}
+        {/* <Stack className="body-search-box" flexDirection="row"> */}
           <Box className="search-man-box" style={{ position: "relative" }}>
             <div className="image-container">
               <img src={manBack} className="man-img" alt="Man" />
@@ -1519,9 +1519,9 @@ const MainBodySearch = () => {
               />
             </div>
           </Box>
-          <div className={`result-box ${activeButton ? "active" : ""}`}>
+          {/* <div className={`result-box ${activeButton ? "active" : ""}`}>
             {backresult}
-          </div>
+          </div> */}
         </Stack>
       </Stack>
     </div>

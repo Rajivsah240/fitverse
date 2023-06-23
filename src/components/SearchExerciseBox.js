@@ -8,7 +8,7 @@ const SearchExercisesBox = () => {
 
   return (
     <Stack className = 'SearchExerciseBox' alignItems="center" mt="37px" justifyContent="center" p="20px">
-      <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="49px" textAlign="center">
+      <Typography color={'white'} fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="49px" textAlign="center">
         Awesome Exercises You <br /> Should Know
       </Typography>
 
@@ -21,7 +21,7 @@ const SearchExercisesBox = () => {
           placeholder="Search Exercises"
           type="text"
         />
-        <Button sx={{ bgcolor: '#73447A', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' } }}>
+        <Button sx={{ bgcolor: 'transparent', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' },borderRadius:'45px' }}>
           Search
         </Button>
       </Box>

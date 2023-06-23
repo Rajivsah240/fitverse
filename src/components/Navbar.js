@@ -5,15 +5,7 @@ import Logo from "../assets/111.svg";
 
 const Navbar = () => {
   const location = useLocation();
-  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
-
-  const handleMouseEnter = () => {
-    setIsNavbarVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsNavbarVisible(true);
-  };
+  const isHomePage = location.pathname === "/";
 
   return (
     <Stack
@@ -21,19 +13,13 @@ const Navbar = () => {
       direction="row"
       justifyContent="space-around"
       alignItems="center"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{
-        opacity: isNavbarVisible ? 1 : 0,
-        height: isNavbarVisible ? "94px":"5px",
-        transition: "opacity 0.1s ease-in-out",
-      }}
+      sx={{background: isHomePage ? "black" : "linear-gradient(180deg, #010B1B, #102661 90%)"}}
     >
       <Link to="/" >
         <img
           src={Logo}
           alt="logo"
-          style={{ width: "150px", height: "50px", margin: "0px" }}
+          style={{ width: "150px", height: "94px", margin: "0px" }}
         />
       </Link>
 

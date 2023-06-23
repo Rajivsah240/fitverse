@@ -9,16 +9,7 @@ body{
 
 
 /*Navbar and navbar Links*/
-.navbar{
-  /* background: rgb(45,42,37);
-  background: linear-gradient(90deg, rgba(45,42,37,0.9080882352941176) 0%, rgba(43,2,2,1) 100%); */
-  /* background: rgb(9,9,8);
-  background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
-  /* background: rgb(9,9,8); */
-  /* background: linear-gradient(180deg, rgba(9,9,8,0.9080882352941176) 0%, rgba(75,9,9,1) 100%); */
-  background: rgb(0, 0, 0);
-  /* background: linear-gradient(90deg, rgba(9,9,8,0.9080882352941176) 46%, rgba(75,9,9,1) 100%); */
-}
+
 .navbar:hover,.navbar.hover{
   visibility: visible !important;
 }
@@ -101,9 +92,12 @@ body{
 
 /*Txt Description About Virtual Human Body*/
 
-.GymModel {
-  background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgb(71, 73, 98) 87.1% );
-}
+/* .GymModel { */
+  /* background:  linear-gradient(320deg, #010B1B 3%, #102661 9.9%,#010B1B 67.1%, #3B1A3C 85%); */
+  /* background: linear-gradient(to top, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965); */
+/*}*/
+
+
 
 .line{
     width: 100%;
@@ -115,8 +109,10 @@ body{
 }
 
 .statement-container {
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  /* background:linear-gradient(to bottom, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965); */
+  background: linear-gradient(to bottom, #030d1f, #030d1f, #0c0c29, #0d1121, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965);
+  
   padding: 90px 160px;
   
   border-radius: 8px;
@@ -136,7 +132,6 @@ body{
 .statement-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  color: black;
 }
 
 
@@ -158,6 +153,8 @@ body{
 }
 .image-container{
   height: inherit;
+  /* background: linear-gradient(14deg,#001d56 10.9%,#515473 87.1%); */
+  /* background: radial-gradient(circle closest-side at 50% 90%, #747788, transparent); */
 }
 
 
@@ -184,7 +181,7 @@ body{
     /* display: flex;
     align-items: center; */
     border-radius: 0px;
-    text-align:left;
+    text-align:center;
     box-shadow: rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.5) 0px 24px 80px;
     /* background: linear-gradient(to right, black, #222222);   */
     /* /* background: -webkit-linear-gradient(to top, #FFEEEE, #FFEEEE); */
@@ -194,6 +191,7 @@ body{
 
 .result-box.active{
   font-size: 20px;
+  text-align: left;
 }
 
 .exercises-details-container{
@@ -211,10 +209,13 @@ body{
 
 
 .SearchExerciseBox{
-  background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgba(81,84,115,1) 87.1% );
+  background:  linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
   margin-top: 0px !important;
 }
-
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+  border-radius: 45px !important;
+  box-shadow: 0 0 5px #205295 !important;
+}
 
 
 
@@ -426,9 +427,8 @@ body{
 
 
 .about-container-main{
-  background: rgb(9,9,8);
-  background: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgba(81,84,115,1) 87.1% );
-  color: black;
+  background: linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
+  color: rgb(118, 192, 232);
 }
 .about-container {
   max-width: 800px;
@@ -521,7 +521,8 @@ code {
 .contact-container-main{
   /* background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% ); */
   /* background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); */
-  background-image: linear-gradient( 328deg, rgb(45 46 48) 10.9%, rgba(81,84,115,1) 87.1% );
+  background: linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
+  color: #007bff;
 }
 
 
@@ -595,13 +596,13 @@ textarea {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border-width: 2px;
   border-style: solid;
-  box-shadow: none;
+  box-shadow: 0 0 5px #205295;
   background-color: transparent;
-  color: rgb(0, 0, 0);
-  border-color: rgb(56, 2, 2);
+  color:#007bff;
+  border: none;
   font-family: 'Mulish', sans-serif;
   font-weight: 600;
   /* font-smooth: antialiased; */

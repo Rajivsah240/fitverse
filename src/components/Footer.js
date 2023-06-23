@@ -1,9 +1,14 @@
 import React from "react";
 import Logo from "../assets/111.svg";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
-    <footer className="footer-distributed" style={{ backgroundColor: "black" }}>
+    <footer className="footer-distributed" style={{ background: isHomePage ? "linear-gradient(to bottom, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965)" : "#010B1B" }}>
       <div className="footer-left">
         <img
           src={Logo}
