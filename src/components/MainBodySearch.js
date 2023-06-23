@@ -39,13 +39,13 @@ const MainBodySearch = () => {
   const [activeButton, setActiveButton] = useState(null);
 
   const containerStyle = {
-    backgroundColor: "#FFFFFF",
+    background: "linear-gradient(to top, #FFEEEE, #FFEEEE)"
     // padding: "10px",
   };
 
   const paragraphStyle = {
     marginBottom: "10px",
-    fontSize: "16px",
+    fontSize: "20px",
     fontWeight: "800",
   };
 

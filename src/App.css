@@ -190,14 +190,15 @@ body{
 }
 
 .result-box.active{
-  font-size: 20px;
   text-align: left;
 }
 
 .exercises-details-container{
   padding-right: 100px;
 }
-
+.css-47suzj-MuiTypography-root{
+  font-family: 'Rajdhani', sans-serif !important;/*Heading of every exercise*/
+}
 
 
 
@@ -216,7 +217,7 @@ body{
   border-radius: 45px !important;
   box-shadow: 0 0 5px #205295 !important;
 }
-
+/*The above class is for search bar in Awesome Exercise page*/
 
 
 
@@ -428,7 +429,7 @@ body{
 
 .about-container-main{
   background: linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
-  color: rgb(118, 192, 232);
+  color: rgb(255, 255, 255);
 }
 .about-container {
   max-width: 800px;
