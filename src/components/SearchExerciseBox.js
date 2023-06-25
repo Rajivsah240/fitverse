@@ -13,14 +13,24 @@ const SearchExercisesBox = () => {
       </Typography>
 
       <Box  position="relative" mb="72px">
-        <TextField
-          height="76px"
-          sx={{ input: { fontWeight: '700', border: 'none', borderRadius: '4px' }, width: { lg: '1170px', xs: '350px' }, borderRadius: '40px' }}
-          value={search}
-          onChange={(e) => setSearch(e.target.value.toLowerCase())}
-          placeholder="Search Exercises"
-          type="text"
-        />
+      <TextField
+  height="76px"
+  sx={{
+    input: {
+      fontWeight: '700',
+      border: 'none',
+      borderRadius: '4px',
+      color: 'white' // Add this line to set the text color to white
+    },
+    width: { lg: '1170px', xs: '350px' },
+    borderRadius: '40px'
+  }}
+  value={search}
+  onChange={(e) => setSearch(e.target.value.toLowerCase())}
+  placeholder="Search Exercises"
+  type="text"
+/>
+
         <Button sx={{ bgcolor: 'transparent', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' },borderRadius:'45px',boxShadow:'none' }}>
           Search
         </Button>

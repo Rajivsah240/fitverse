@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   box-sizing: border-box;
 }
@@ -98,16 +102,6 @@ body{
 /*}*/
 
 
-
-.line{
-    width: 100%;
-    height: 1px;
-    background-color: rgb(45 46 48);
-    margin-top: 0px;
-    margin-bottom: 100px;
-    padding: 0px;
-}
-
 .statement-container {
   color: #ffffff;
   /* background:linear-gradient(to bottom, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965); */
@@ -174,19 +168,17 @@ body{
 }
 .result-box{
     font-family: 'Rajdhani', sans-serif;
-    width: 55%;
-    padding: 20px;
-    font-size: 30px;
-    color: #333;
-    /* display: flex;
-    align-items: center; */
-    border-radius: 0px;
-    text-align:center;
-    box-shadow: rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.5) 0px 24px 80px;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* color: #33383b; */
+    /* display: flex; */
+    /*align-items: center; */
+    /* border-radius: 0px; */
+    /* text-align:center; */
+    /* box-shadow: rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px, rgba(17, 17, 26, 0.5) 0px 24px 80px; */
     /* background: linear-gradient(to right, black, #222222);   */
     /* /* background: -webkit-linear-gradient(to top, #FFEEEE, #FFEEEE); */
-    background: linear-gradient(to top, #FFEEEE, #FFEEEE);
-    white-space: pre-line;
+    /* background: linear-gradient(to top, #FFEEEE, #FFEEEE); */
 }
 
 .result-box.active{
@@ -194,7 +186,7 @@ body{
 }
 
 .exercises-details-container{
-  padding-right: 100px;
+  padding-right: 500px;
 }
 .css-47suzj-MuiTypography-root{
   font-family: 'Rajdhani', sans-serif !important;/*Heading of every exercise*/
@@ -217,6 +209,7 @@ body{
   border-radius: 45px !important;
   box-shadow: 0 0 5px #205295 !important;
 }
+
 /*The above class is for search bar in Awesome Exercise page*/
 
 

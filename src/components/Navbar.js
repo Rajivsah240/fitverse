@@ -19,7 +19,7 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="logo"
-          style={{ width: "150px", height: "94px", margin: "0px" }}
+          style={{ width: "150px", height: "94px", margin: "0px", mixBlendMode: "screen", }}
         />
       </Link>
 

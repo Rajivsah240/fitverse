@@ -18,6 +18,7 @@ const Footer = () => {
             height: "80px",
             margin: "0px",
             marginTop: "10px",
+            mixBlendMode:"screen"
           }}
         />
 
@@ -35,7 +36,7 @@ const Footer = () => {
           <a href="#">Faq</a>
         </p>
 
-        <p className="footer-company-name">FitVerse © 2023</p>
+        <p className="footer-company-name" style={{color:"lightseagreen"}}>FitVerse © 2023</p>
       </div>
 
       <div className="footer-center">
@@ -68,7 +69,10 @@ const Footer = () => {
       <div className="footer-right">
         <p className="footer-company-about">
           <span>About the company</span>
+          "FitVerse" can represent a universe or realm dedicated to fitness.
           A comprehensive fitness ecosystem, meticulously crafted by Mohit, Piyush, and Rajiv, offering cutting-edge tools, personalized workouts, expert advice, and a vibrant community to empower your fitness journey like never before.
+          "Stellar" relates to stars and the cosmos, representing greatness, brilliance, and extraordinary achievement. It suggests aiming for fitness levels that are exceptional, remarkable, and beyond the ordinary.
+
         </p>
 
         <div className="footer-icons">
