@@ -3,8 +3,6 @@ import { Stack, Box, Typography } from "@mui/material";
 import manFront from "../assets/Man_Front.png";
 import manBack from "../assets/Man_Back.png";
 
-
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDumbbell,
@@ -14,7 +12,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const ClickableArea = ({ top, left, onClick, active }) => {
-
   return (
     <div
       className={`clickable-area ${active ? "active" : ""}`}
@@ -35,17 +32,18 @@ const ClickableArea = ({ top, left, onClick, active }) => {
 };
 
 const MainBodySearch = () => {
-
   const [frontresult, setFrontResult] = useState(
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-    <span style={{ padding: "20px" }}>CLICK ANY BODY PART TO START</span>
-<FontAwesomeIcon
-  icon={faPerson}
-  fade
-  size="2xl"
-  style={{ color: "#275c7c", marginTop: "5px" }}
-/>
-</div>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <span style={{ padding: "20px" }}>CLICK ANY BODY PART TO START</span>
+      <FontAwesomeIcon
+        icon={faPerson}
+        fade
+        size="2xl"
+        style={{ color: "#275c7c", marginTop: "5px" }}
+      />
+    </div>
   );
   // const [backresult, setFrontResult] = useState("CLICK ANY BODY PART TO START");
 
@@ -60,7 +58,6 @@ const MainBodySearch = () => {
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
     maxWidth: "600px",
     margin: "0 auto",
-
   };
 
   const paragraphStyle = {
@@ -86,8 +83,11 @@ const MainBodySearch = () => {
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
-            <strong style={strongStyle}>Exercise 1 : Overhead Press (Barbell or Dumbbell)</strong> </p>
-            
+              <strong style={strongStyle}>
+                Exercise 1 : Overhead Press (Barbell or Dumbbell)
+              </strong>{" "}
+            </p>
+
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong>{" "}
               Overhead press targets all three heads of the deltoids, promoting
@@ -100,16 +100,19 @@ const MainBodySearch = () => {
             </p> */}
             <p>
               <strong style={strongStyle}>Target Muscles : </strong> Anterior
-              deltoids, medial deltoids, posterior deltoids. 
+              deltoids, medial deltoids, posterior deltoids.
             </p>
             <p>
               <strong style={strongStyle}>Sets and Reps:</strong>3-4 sets of
-              8-12 reps. 
+              8-12 reps.
             </p>
           </div>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
-            <strong style={strongStyle}>Exercise 2 : Dumbbell Lateral Raises</strong> </p>
+              <strong style={strongStyle}>
+                Exercise 2 : Dumbbell Lateral Raises
+              </strong>{" "}
+            </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong>{" "}
               Lateral raises isolate the medial deltoids, helping to develop
@@ -122,15 +125,17 @@ const MainBodySearch = () => {
               lower them back down.
             </p> */}
             <p style={paragraphStyle}>
-                <strong style={strongStyle}>Target Muscles : </strong> Medial deltoids.
-              </p>
-              <p style={paragraphStyle}>
-                <strong style={strongStyle}>Target Muscles : </strong> Medial deltoids.
-              </p>
+              <strong style={strongStyle}>Target Muscles : </strong> Medial
+              deltoids.
+            </p>
+            <p style={paragraphStyle}>
+              <strong style={strongStyle}>Target Muscles : </strong> Medial
+              deltoids.
+            </p>
           </div>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
-              <strong style={strongStyle}>Exercise 3 : Front Raises</strong> 
+              <strong style={strongStyle}>Exercise 3 : Front Raises</strong>
             </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong> Front
@@ -154,7 +159,7 @@ const MainBodySearch = () => {
           </div>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
-              <strong style={strongStyle}>Exercise 4: Upright Rows</strong> 
+              <strong style={strongStyle}>Exercise 4: Upright Rows</strong>
             </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong>{" "}
@@ -179,7 +184,7 @@ const MainBodySearch = () => {
           </div>
           <div className="exercises-details-container">
             <p style={paragraphStyle}>
-              <strong style={strongStyle}>Exercise 5: Arnold Press</strong> 
+              <strong style={strongStyle}>Exercise 5: Arnold Press</strong>
             </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong> Arnold
@@ -216,7 +221,11 @@ const MainBodySearch = () => {
         </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
-            <p style={paragraphStyle}><strong style={strongStyle}>Exercise 1:Barbell Bench Press</strong></p> 
+            <p style={paragraphStyle}>
+              <strong style={strongStyle}>
+                Exercise 1:Barbell Bench Press
+              </strong>
+            </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong> The
               barbell bench press is a compound exercise that activates the
@@ -350,7 +359,9 @@ const MainBodySearch = () => {
         </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
-            <p style={paragraphStyle}><strong style={strongStyle}>Exercise 1: Plank</strong></p>
+            <p style={paragraphStyle}>
+              <strong style={strongStyle}>Exercise 1: Plank</strong>
+            </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong> The
               barbell bench press is a compound exercise that activates the
@@ -480,7 +491,9 @@ const MainBodySearch = () => {
         </Typography>
         <Stack flexDirection={"row"} overflow={"auto"} whiteSpace={"nowrap"}>
           <div className="exercises-details-container">
-            <p style={paragraphStyle}><strong style={strongStyle}>Exercise 1: Barbell Squats</strong></p>
+            <p style={paragraphStyle}>
+              <strong style={strongStyle}>Exercise 1: Barbell Squats</strong>
+            </p>
             {/* <p>
               <strong style={strongStyle}>Scientific Importance:</strong>{" "}
               Barbell squats target the quadriceps, helping to build lower body
@@ -1465,7 +1478,13 @@ const MainBodySearch = () => {
       </Stack>
 
       {/* <div className="line" id='body'></div> */}
-      <Stack flexDirection={"column"} sx={{background:'linear-gradient(to top, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965)'}}>
+      <Stack
+        flexDirection={"column"}
+        sx={{
+          background:
+            "linear-gradient(to top, #0e0c0d, #150b12, #180b18, #180c1f, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965)",
+        }}
+      >
         <Stack className="body-search-box" flexDirection="row">
           <Box className="search-man-box" style={{ position: "relative" }}>
             <div className="image-container">
@@ -1508,28 +1527,31 @@ const MainBodySearch = () => {
               />
             </div>
           </Box>
-          <div className={`result-box ${activeButton ? "active" : ""}`}  class='flex items-center justify-center '>
-<div class=" group mx-auto bg-white border shadow-4xl rounded-xl">
-    <div class="pb-6">
-        <div class="mt-2 ">
-        <h3 style={{ marginTop: 0, marginBottom: 0,}}>{frontresult}</h3>
-        </div>
-        <div class="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
-  <div class="absolute flex -space-x-13 rounded-b-2xl">
-    <div class="w-48 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-blue-400/100 group-hover:bg-blue-600/90 z-10"></div>
-    <div class="w-40 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-blue-300/100 group-hover:bg-blue-500/90 z-20"></div>
-    <div class="w-40 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-blue-200/100 group-hover:bg-blue-400/90 z-30"></div>
-    <div class="w-40 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-blue-100/100 group-hover:bg-blue-300/90 z-40"></div>
-    <div class="w-40 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-blue-50/100 group-hover:bg-blue-200/90 z-50"></div>
-  </div>
-</div>
-
-    </div>
-</div>
-
-</div>
-        {/* </Stack> */}
-        {/* <Stack className="body-search-box" flexDirection="row"> */}
+          <div
+            className={`result-box ${activeButton ? "active" : ""}`}
+            class="flex items-center justify-center "
+          >
+            <div class=" group mx-auto bg-white border shadow-4xl rounded-xl">
+              <div class="pb-6">
+                <div class="mt-2 ">
+                  <h3 style={{ marginTop: 0, marginBottom: 0 }}>
+                    {frontresult}
+                  </h3>
+                </div>
+                <div class="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
+                  <div class="absolute flex -space-x-13 rounded-b-2xl">
+                    <div class="w-48 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-blue-400/100 group-hover:bg-blue-600/90 z-10"></div>
+                    <div class="w-40 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-blue-300/100 group-hover:bg-blue-500/90 z-20"></div>
+                    <div class="w-40 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-blue-200/100 group-hover:bg-blue-400/90 z-30"></div>
+                    <div class="w-40 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-blue-100/100 group-hover:bg-blue-300/90 z-40"></div>
+                    <div class="w-40 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-blue-50/100 group-hover:bg-blue-200/90 z-50"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* </Stack> */}
+          {/* <Stack className="body-search-box" flexDirection="row"> */}
           <Box className="search-man-box" style={{ position: "relative" }}>
             <div className="image-container">
               <img src={manBack} className="man-img" alt="Man" />
