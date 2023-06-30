@@ -205,7 +205,7 @@ body{
   background:  linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
   margin-top: 0px !important;
 }
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+.search-exercise-input{
   border-radius: 45px !important;
   box-shadow: 0 0 5px #205295 !important;
 }
@@ -419,97 +419,40 @@ body{
 
 /*About Page*/
 
+.about-nav{
+  background:url(../src/assets/about_bckg.jpg) !important;
+  background-size: cover !important;
+}
 
 .about-container-main{
-  background: linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
-  color: rgb(255, 255, 255);
-}
-.about-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  
+  position: relative;
+  top: 0px;
+  z-index: -1;
 }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
+.about-container-main::before {
+  background: rgb(142, 142, 54);
+}
+.about-bckg-img{
+  background-image: url(../src/assets/about_bckg.jpg);
+  height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: end;
+  padding: 0;
+  position: relative;
 }
 
-h2 {
-  font-size: 24px;
-  margin-top: 40px;
-  margin-bottom: 16px;
+.about-border{
+  border-top: 40vh solid transparent;
+  border-right: 98vw solid #030d1f;
 }
-
-h3 {
-  font-size: 20px;
-  margin-top: 32px;
-  margin-bottom: 12px;
+.about-body{
+  background: linear-gradient(to bottom, #030d1f, #030d1f, #0c0c29, #0d1121, #140e27, #11122e, #0b1536, #00183e, #001c48, #012051, #03255b, #062965);
 }
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 16px;
-}
-
-ul {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 16px;
-  padding-left: 20px;
-}
-
-ol {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 16px;
-  padding-left: 20px;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-pre {
-  background-color: #f5f5f5;
-  padding: 10px;
-  margin-bottom: 16px;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 4px;
-  overflow-x: auto;
-  color: #000000;
-}
-
-pre code {
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  
-}
-
-pre code span {
-  color: #d73a49;
-}
-
-code {
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  background-color: #f5f5f5;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #000000;
-}
-
-
-
-
-
-
-
-
+/* body{
+  background-color: #0b3a87;
+} */
 
 /*Contact Page*/
 .contact-container-main{

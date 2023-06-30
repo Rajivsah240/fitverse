@@ -6,10 +6,11 @@ import Logo from "../assets/111.svg";
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-
+  const isAboutpage = location.pathname === "/about";
   return (
     <Stack
-      className="navbar"
+    className={`navbar ${isAboutpage ? 'about-nav' : ''}`}
+
       direction="row"
       justifyContent="space-around"
       alignItems="center"

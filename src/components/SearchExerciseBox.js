@@ -1,5 +1,22 @@
 import {React,useState} from 'react'
-import { Box, Button, Stack, TextField, Typography } from '@mui/material'
+import { Box, Button, Stack, TextField, ThemeProvider, Typography,createTheme } from '@mui/material'
+
+const theme = createTheme({
+  components: {
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          border: 'none',
+          // borderWidth:'0'
+          // Add other style overrides for the root element of MuiInputBase here
+        },
+
+        // Add other style overrides for different slots of MuiInputBase if needed
+      },
+    },
+    // Add other component styles if needed
+  },
+});
 
 
 const SearchExercisesBox = () => {
@@ -13,14 +30,15 @@ const SearchExercisesBox = () => {
       </Typography>
 
       <Box  position="relative" mb="72px">
-      <TextField
+        <ThemeProvider theme={theme}>
+      <TextField className='search-exercise-input'
   height="76px"
   sx={{
     input: {
       fontWeight: '700',
       border: 'none',
-      borderRadius: '4px',
-      color: 'white' // Add this line to set the text color to white
+      color: 'white',
+      borderRadius:'40px'
     },
     width: { lg: '1170px', xs: '350px' },
     borderRadius: '40px'
@@ -29,7 +47,7 @@ const SearchExercisesBox = () => {
   onChange={(e) => setSearch(e.target.value.toLowerCase())}
   placeholder="Search Exercises"
   type="text"
-/>
+/></ThemeProvider>
 
         <Button sx={{ bgcolor: 'transparent', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' },borderRadius:'45px',boxShadow:'none' }}>
           Search
