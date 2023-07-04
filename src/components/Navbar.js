@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation,useNavigate } from "react-router-dom";
 import { Stack, Button } from "@mui/material";
 import Logo from "../assets/111.svg";
 
 const Navbar = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  const isHomePage = location.pathname === "/" || location.pathname==="/signup";
   const isAboutpage = location.pathname === "/about";
+  const navigate = useNavigate();
+
   return (
     <Stack
     className={`navbar ${isAboutpage ? 'about-nav' : ''}`}
@@ -77,19 +79,20 @@ const Navbar = () => {
             bgcolor: "white",
             textTransform: "none",
             width: "80px",
-            borderRadius: "20px"
+            borderRadius: "15px"
           }}
         >
           LOG IN
         </Button>
-        <Button className="log-sign-btn"
+        <Button className="log-sign-btn" 
           sx={{
             color: "black",
             bgcolor: "white",
             textTransform: "none",
             width: "80px",
-            borderRadius: "20px"
+            borderRadius: "15px"
           }}
+          onClick={() => navigate("/signup")}
         >
           SIGN UP
         </Button>

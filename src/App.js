@@ -8,6 +8,7 @@ import SearchExercises from './pages/SearchExercises';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/search-exercise" element={<SearchExercises/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
       </Routes>
       <Footer/>
     </Box>
