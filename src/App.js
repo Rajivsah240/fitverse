@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer/>
     </Box>

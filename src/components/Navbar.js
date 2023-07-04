@@ -81,6 +81,7 @@ const Navbar = () => {
             width: "80px",
             borderRadius: "15px"
           }}
+          onClick={() => navigate("/login")}
         >
           LOG IN
         </Button>

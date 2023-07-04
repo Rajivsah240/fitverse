@@ -454,12 +454,20 @@ body{
   background-color: #0b3a87;
 } */
 
+
+
+
+
+
+
+
+
 /*Contact Page*/
 .contact-container-main{
   /* background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% ); */
   /* background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); */
   background: linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%);
-  color: #007bff;
+  color: #e7e9ec;
 }
 
 
@@ -506,7 +514,7 @@ label {
   margin-bottom: 8px;
   display: block;
   font-family: 'Mulish', sans-serif;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 input,
@@ -516,8 +524,7 @@ textarea {
   /* border-radius: 4px; */
   /* border: 1px solid #ccc; */
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.07);
-  color: rgb(0, 0, 0);
+  background-color: rgba(179, 166, 166, 0.07);
   font-size: 14px;
   line-height: 16px;
   border:none;
@@ -525,7 +532,7 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
+  resize:both;
 }
 
 .btn-container{
@@ -558,3 +565,4 @@ button:hover {
   background-color: #dcedff;
   border: none;
 }
+
