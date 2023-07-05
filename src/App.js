@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route,Routes} from 'react-router-dom';
-import {Box} from '@mui/material';
+
 import './App.css';
 import Home from "./pages/Home";
 import Navbar from './components/Navbar';
@@ -10,11 +10,12 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import { AuthProvider } from './AuthContext';
 
 
 function App() {
   return (
-    <Box> 
+    <AuthProvider> 
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -25,7 +26,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer/>
-    </Box>
+    </AuthProvider>
   );
 }
 

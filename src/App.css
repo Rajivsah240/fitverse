@@ -420,8 +420,7 @@ body{
 /*About Page*/
 
 .about-nav{
-  background:url(../src/assets/about_bckg.jpg) !important;
-  background-size: cover !important;
+  background: #0c0c0c !important;
 }
 
 .about-container-main{
@@ -431,10 +430,10 @@ body{
 }
 
 .about-container-main::before {
-  background: rgb(142, 142, 54);
+  background-color: #000000;
 }
 .about-bckg-img{
-  background-image: url(../src/assets/about_bckg.jpg);
+  background-image: url(../src/assets/about_bckg_3.png);
   height: 120vh;
   background-size: cover;
   background-repeat: no-repeat;

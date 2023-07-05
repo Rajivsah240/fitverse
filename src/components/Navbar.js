@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation,useNavigate } from "react-router-dom";
 import { Stack, Button } from "@mui/material";
 import Logo from "../assets/111.svg";
+
+import {AuthContext} from "../AuthContext";
+
 
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/" || location.pathname==="/signup";
   const isAboutpage = location.pathname === "/about";
   const navigate = useNavigate();
-
+  const {loggedIn,handleLogout}=useContext(AuthContext);
   return (
     <Stack
     className={`navbar ${isAboutpage ? 'about-nav' : ''}`}
@@ -71,8 +74,36 @@ const Navbar = () => {
           CONTACT
         </Link>
       </Stack>
-
-      <Stack direction="row" gap="30px" height="40px">
+      {loggedIn ?
+      (
+        <Stack direction="row" gap="30px" height="40px">
+        <Button className="log-sign-btn"
+          sx={{
+            color: "black",
+            bgcolor: "white",
+            textTransform: "none",
+            width: "100px",
+            borderRadius: "15px"
+          }}
+          onClick={handleLogout}
+        >
+          LOG OUT
+        </Button>
+        <Button className="log-sign-btn" 
+          sx={{
+            color: "black",
+            bgcolor: "white",
+            textTransform: "none",
+            width: "80px",
+            borderRadius: "10px"
+          }}
+          onClick={() => navigate("/")}
+        >
+          Welcome
+        </Button>
+      </Stack>
+      ):
+      (<Stack direction="row" gap="30px" height="40px">
         <Button className="log-sign-btn"
           sx={{
             color: "black",
@@ -97,7 +128,7 @@ const Navbar = () => {
         >
           SIGN UP
         </Button>
-      </Stack>
+      </Stack>)}
     </Stack>
   );
 };

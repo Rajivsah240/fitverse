@@ -1,6 +1,61 @@
-import React from 'react';
-import { Stack } from '@mui/material';
+import {React,useState,useContext} from 'react';
+import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+import { Button, Stack } from '@mui/material';
+import { AuthContext } from "../AuthContext";
+
+
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const {handleLoginSuccess}=useContext(AuthContext);
+  const [loginMessage, setloginMessage] = useState("");
+  const [countdown, setCountdown] = useState(5);
+  const navigate = useNavigate();
+  
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const userData = {
+      email,
+      password,
+    };
+
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/api/login",
+        userData
+      );
+      const data = response.data;
+
+      //Assuming login was successful and received a token in the response
+      const token = data.token;
+      //Store the token in local storage or state for future authenticated requests
+      localStorage.setItem("token", token);
+
+
+      setloginMessage("Login Successfully");
+      // Redirect to the home page or any other desired page
+      handleLoginSuccess();
+      let timer = setInterval(() => {
+        setCountdown((prevCountdown) => prevCountdown - 1);
+      }, 1000);
+
+      setTimeout(() => {
+        clearInterval(timer);
+        navigate("/");
+      }, 5000);
+    } catch (error) {
+      if (error.response && error.response.data.error) {
+        setloginMessage(error.response.data.error);
+      } else {
+        setloginMessage("Something went wrong");
+      }
+      console.log(error); // Handle the error
+    }
+  };
+
+
   return (
     <Stack padding={'50px'} className='body' alignItems={'center'} justifyContent={'center'} 
     sx={{background:"linear-gradient(0deg, #010B1B 10.9%,#102661 97.1%)"}}>
@@ -12,21 +67,97 @@ const Login = () => {
         <h3>Login Here</h3>
 
         <label htmlFor="username">Email</label>
-        <input type="email" placeholder="Email" id="username" />
+        <input type="email" placeholder="Email" id="username" value={email}
+                onChange={(e) => setEmail(e.target.value)}/>
 
         <label htmlFor="password">Password</label>
-        <input type="password" placeholder="Password" id="password" />
+        <input type="password" placeholder="Password" id="password" value={password}
+                onChange={(e) => setPassword(e.target.value)}/>
 
-        <button>Log In</button>
+        <Button className='button' onClick={handleLogin}>Log In</Button>
         
       </form>
+      {loginMessage && (
+              <p
+                className={`message login-msg ${
+                  loginMessage
+                    ? loginMessage === "Login Successfully"
+                      ? "success"
+                      : "error"
+                    : ""
+                }`}
+              >
+                {loginMessage}
+              </p>
+            )}
+            {loginMessage === "Login Successfully" && countdown > 0 && (
+              <p className="countdown-timer login-timer">
+                Redirecting in <span className="timer">{countdown}</span>{" "}
+                seconds to HOME...
+              </p>
+            )}
 
       <style>{`
         
         .body {
           background-color: #080710;
         }
-
+        .login-msg{
+          margin-top: 10px;
+          width: auto;
+        
+        }
+        .login-timer{
+          color: #000000;
+          letter-spacing: normal;
+        }
+        .message{
+          /*SignUp message*/
+          padding: 8px;
+          text-align: center;
+          font-size: 17px;
+          line-height: 30px;
+          font-weight: 700;
+          margin: 0 auto;
+          width: 300px;
+          max-width: calc(100vw - 48px);
+          transform-origin: center bottom;
+          transition: all 150ms ease-in-out 0s;
+          border-radius: 12px;
+          transform: translate3d(0px, 0px, 0px) scale(1);
+          opacity: 1;
+          }
+          .success{
+            color: rgb(0, 104, 74);
+            border: 1px solid rgb(192, 250, 230);
+            box-shadow: rgba(6, 22, 30, 0.2) 0px 18px 18px -15px;
+            background-color: rgb(227, 252, 247);
+          }
+          
+          .error{
+            color: rgb(104, 0, 0);
+            border: 1px solid rgb(250, 192, 192);
+            box-shadow: rgba(30, 18, 6, 0.2) 0px 18px 18px -15px;
+            background-color: rgb(252, 227, 227);
+          }
+          
+          
+          /*Countdown Timer*/
+          .countdown-timer{
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+            letter-spacing: 0.05in;
+          }
+          .timer{
+            font-size: 25px;
+            font-weight: 800;
+            color: #7450a0;
+            letter-spacing: normal;
+          }
+          
+          
+          
         .background {
           width: 430px;
           height: 520px;
@@ -108,44 +239,18 @@ const Login = () => {
           color: #e5e5e5;
         }
 
-        button {
-          margin-top: 50px;
+        .button {
+          margin-top: 50px !important;
           width: 100%;
-          background-color: #ffffff;
-          color: #080710;
-          padding: 15px 0;
-          font-size: 18px;
-          font-weight: 600;
-          border-radius: 5px;
+          background-color: #ffffff !important;
+          color: #080710  !important;
+          padding: 15px 0  !important;
+          font-size: 18px  !important;
+          font-weight: 600  !important;
+          border-radius: 5px  !important;
           cursor: pointer;
         }
 
-        .social {
-          margin-top: 30px;
-          display: flex;
-        }
-
-        .social div {
-          background: red;
-          width: 150px;
-          border-radius: 3px;
-          padding: 5px 10px 10px 5px;
-          background-color: rgba(255, 255, 255, 0.27);
-          color: #eaf0fb;
-          text-align: center;
-        }
-
-        .social div:hover {
-          background-color: rgba(255, 255, 255, 0.47);
-        }
-
-        .social .fb {
-          margin-left: 25px;
-        }
-
-        .social i {
-          margin-right: 4px;
-        }
       `}</style>
     </Stack>
   );
