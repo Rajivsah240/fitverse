@@ -87,17 +87,6 @@ const MainBodySearch = () => {
                 Exercise 1 : Overhead Press (Barbell or Dumbbell)
               </strong>{" "}
             </p>
-
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Overhead press targets all three heads of the deltoids, promoting
-              overall shoulder strength and muscle development.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Stand with feet
-              shoulder-width apart, hold the barbell or dumbbells at shoulder
-              level, press the weight overhead, and lower it back down.
-            </p> */}
             <p>
               <strong style={strongStyle}>Target Muscles : </strong> Anterior
               deltoids, medial deltoids, posterior deltoids.
@@ -113,17 +102,7 @@ const MainBodySearch = () => {
                 Exercise 2 : Dumbbell Lateral Raises
               </strong>{" "}
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Lateral raises isolate the medial deltoids, helping to develop
-              broad and defined shoulders.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Stand with feet
-              shoulder-width apart, hold dumbbells by your sides, raise the
-              weights out to the sides until they reach shoulder level, and
-              lower them back down.
-            </p> */}
+            
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Target Muscles : </strong> Medial
               deltoids.
@@ -137,17 +116,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 3 : Front Raises</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong> Front
-              raises primarily target the anterior deltoids, helping to build
-              strength and definition in the front of the shoulders.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Stand with feet
-              shoulder-width apart, hold dumbbells in front of your thighs,
-              raise the weights forward until they reach shoulder level, and
-              lower them back down.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Anterior
               deltoids.
@@ -161,18 +130,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 4: Upright Rows</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Upright rows target the lateral and posterior deltoids, along with
-              the trapezius and upper back muscles, promoting overall shoulder
-              and upper body strength.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Stand with feet
-              shoulder-width apart, hold a barbell or dumbbells in front of your
-              thighs, pull the weight up toward your chin while keeping it close
-              to your body, and lower it back down.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Medial
               deltoids, posterior deltoids, trapezius.
@@ -186,17 +144,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 5: Arnold Press</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong> Arnold
-              press is a variation of the overhead press that engages all three
-              heads of the deltoids and provides a greater range of motion.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Start with
-              dumbbells at shoulder level, palms facing you, press the weights
-              overhead while rotating your palms outward, and lower them back
-              down while rotating the palms back to the starting position.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles: </strong> Anterior
               deltoids, medial deltoids, posterior deltoids.
@@ -226,17 +174,7 @@ const MainBodySearch = () => {
                 Exercise 1:Barbell Bench Press
               </strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong> The
-              barbell bench press is a compound exercise that activates the
-              pectoralis major, anterior deltoids, and triceps, promoting upper
-              body strength and muscle growth.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Lie on a flat
-              bench, grip the barbell slightly wider than shoulder-width apart,
-              lower it to your chest, and press it back up.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Pectoralis
               major, anterior deltoids, triceps.
@@ -250,18 +188,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 2: Dumbbell Flyes</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Dumbbell flyes isolate the chest muscles, providing a stretching
-              motion that promotes muscle growth and flexibility in the
-              pectoralis major.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Lie on a flat
-              bench, hold dumbbells above your chest with slightly bent arms,
-              lower the weights out to the sides in a wide arc, and return to
-              the starting position.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Pectoralis
               major, anterior deltoids.
@@ -275,17 +202,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 3: Push-Ups</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Push-ups engage the chest, shoulders, and triceps while also
-              activating core stabilizer muscles, improving upper body strength
-              and stability.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Start in a
-              plank position, lower your body by bending the elbows, keeping the
-              back straight, and push back up.
-            </p> */}
+          
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Pectoralis
               major, anterior deltoids, triceps.
@@ -301,16 +218,7 @@ const MainBodySearch = () => {
                 Exercise 4: Incline Dumbbell Press
               </strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Incline dumbbell press targets the upper chest fibers, helping to
-              develop a well-rounded and proportionate chest.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Set an incline
-              bench at a 30-45 degree angle, hold dumbbells at shoulder level,
-              press them upward, and lower them back down.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Upper
               pectoralis major, anterior deltoids, triceps.
@@ -324,17 +232,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 5: Cable Chest Flyes</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong> Cable
-              chest flyes provide constant tension on the chest muscles,
-              promoting muscle activation and growth.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Stand in the
-              center of a cable machine, hold handles at shoulder height, step
-              forward, and bring your hands together in front of your chest,
-              squeezing the chest muscles.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Pectoralis
               major, anterior deltoids.
@@ -362,17 +260,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 1: Plank</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong> The
-              barbell bench press is a compound exercise that activates the
-              pectoralis major, anterior deltoids, and triceps, promoting upper
-              body strength and muscle growth.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Lie on a flat
-              bench, grip the barbell slightly wider than shoulder-width apart,
-              lower it to your chest, and press it back up.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Pectoralis
               major, anterior deltoids, triceps.
@@ -386,17 +274,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 2: Bicycle Crunches</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Bicycle crunches engage the rectus abdominis and obliques, helping
-              to strengthen and define the abdominal muscles.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Lie on your
-              back, bring your knees toward your chest, and perform a pedaling
-              motion with your legs while touching your elbow to the opposite
-              knee.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Rectus
               Abdominis, Obliques.
@@ -410,16 +288,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 3: Russian Twists</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Russian twists primarily target the obliques, helping to improve
-              rotational strength and stability in the core.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Sit on the
-              ground with your knees bent, lean back slightly, and rotate your
-              torso from side to side while holding a weight or medicine ball.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Obliques.
             </p>
@@ -432,16 +301,7 @@ const MainBodySearch = () => {
             <p style={paragraphStyle}>
               <strong style={strongStyle}>Exercise 4: Reverse Crunches</strong>
             </p>
-            {/* <p>
-              <strong style={strongStyle}>Scientific Importance:</strong>{" "}
-              Reverse crunches target the lower abs, helping to strengthen and
-              tone the lower portion of the rectus abdominis.
-            </p>
-            <p>
-              <strong style={strongStyle}>Instructions:</strong> Lie on your
-              back with your legs bent and knees raised, contract your abs to
-              lift your hips off the ground, and slowly lower them back down.
-            </p> */}
+            
             <p>
               <strong style={strongStyle}>Target Muscles:</strong> Lower Rectus
               Abdominis.

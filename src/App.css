@@ -565,3 +565,10 @@ button:hover {
   border: none;
 }
 
+
+@media only screen and (max-width: 750px) {
+  .log-sign-btn,.navbar img {
+    display: none !important;
+  }
+
+}

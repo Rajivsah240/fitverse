@@ -30,10 +30,12 @@ const Navbar = () => {
       </Link>
 
       <Stack
+        className="nav-links"
         direction="row"
         gap="40px"
         fontFamily="'Geologica', cursive"
         alignItems="center"
+        fontSize={'62.5%'}
       >
         <Link
           to="/"

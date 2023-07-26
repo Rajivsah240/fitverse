@@ -10,6 +10,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import BodySearchResult from "../src/components/BodySearchResult"
 import { AuthProvider } from './AuthContext';
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/bsr' element={<BodySearchResult/>}/>
       </Routes>
       <Footer/>
     </AuthProvider>
